@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gerenciador de Tarefas </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js"> </script>
+    
+</head>
+<body>
+ 
+    <div id="div-task-board">
+        <div id="text-task-board">
+            <h1> Board <br> de tarefas </h1>
+            <h2 id="text-box"> desafio de responsividade </h2>
+        </div>
+        <div id="task-board">
+            <main>
+                <section id="create-todo-section">
+                    <form id="create-todo-form">
+                        <input type="text"
+                        id="description"
+                        name="description"
+                        class="input-description"
+                        aria-label="Qual a tarefa deseja cadastrar?"
+                        placeholder="Qual a tarefa deseja cadastrar?"/>
+                        
+                    <button type="submit" id="save-task" aria-label="Cadastrar tarefa" class="add-task-btn"> + </button>
+                    </form>
+   
+                </section>
+                <section class="todo-list-section">
+                    <ul id="todo-list"> </ul>
+                </section>
+                <footer>
+                    <button onclick="removeDoneTasks()" class="remove-completed-tasks-btn">
+                        Remover Tarefas Concluídas
+                    </button>
+                </footer>
+            </main>
+        </div>
+    </div>
+
+    <img id="logo" src="/Desafio_02/Imagens/logo.svg" alt="erro">
+    
+</body>
+</html>
